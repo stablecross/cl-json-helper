@@ -33,8 +33,8 @@ The nickname **xjson** can be used for the **cl-json-helper** package.
 		or not _key_ was found.
 		
 		(cl-json:encode-json-to-string '(("HELLO" . "WORLD")
-					  					("ITS" . "ME")
-					  					("CEST" . "MOI")))
+		                                 ("ITS" . "ME")
+		                                 ("CEST" . "MOI")))
 		=> "{\"HELLO\":\"WORLD\",\"ITS\":\"ME\",\"CEST\":\"MOI\"}"
 		
 		(cl-json:decode-json-from-string "{\"HELLO\":\"WORLD\",\"ITS\":\"ME\",\"CEST\":\"MOI\"}")
