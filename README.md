@@ -53,7 +53,10 @@ The nickname **xjson** can be used for the **cl-json-helper** package.
 		   NIL
 		  
 **json-key-value** is just a glorified call to Lisp's **assoc** 
-		
+
+#### Repository
+[https://github.com/stablecross/cl-json-helper](https://github.com/stablecross/cl-json-helper)
+
 ####License
 cl-json-helper is available under a BSD-like license.  See the file LICENSE for
 details.

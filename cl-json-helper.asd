@@ -28,6 +28,7 @@
   :description "Handy extras for cl-json"
   :author "Bob Felts <wrf3@stablecross.com>"
   :license "BSD"
+  :version "1.0.0" 
   :depends-on (#:cl-json)
   :serial t
   :components ((:file "package")
