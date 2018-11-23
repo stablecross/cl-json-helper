@@ -65,3 +65,23 @@
     (if item
 	(values (cdr item) t)
 	(values nil nil))))
+
+;;;
+;;; json-key-value is clunky.
+;;; It's a lot to type for a frequent operation
+;;; and it doesn't allow walking a structure
+;;;
+;;; Hence value-of which walks the structure looking for
+;;; one key after another
+;;;
+(defun value-of-helper (list keys)
+  (multiple-value-bind (value found-p)
+      (json-key-value (first keys) list)
+    (cond
+      ((and found-p (rest keys) (listp value)) (value-of-helper value (rest keys)))
+      ((and found-p (rest keys)) (values nil nil))
+      (found-p (values value t))
+      (t (values nil nil)))))
+
+(defun value-of (list &rest keys)
+  (value-of-helper list keys))
