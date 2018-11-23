@@ -1,4 +1,4 @@
-;;; Copyright (c) 2017 William R. Felts III, All Rights Reserved
+;;; Copyright (c) 2017-2018 William R. Felts III, All Rights Reserved
 ;;;
 ;;; Redistribution and use in source and binary forms, with or without
 ;;; modification, are permitted provided that the following conditions
@@ -28,7 +28,7 @@
   :description "Handy extras for cl-json"
   :author "Bob Felts <wrf3@stablecross.com>"
   :license "BSD"
-  :version "1.0.0" 
+  :version "1.1.0" 
   :depends-on (#:cl-json)
   :serial t
   :components ((:file "package")

@@ -32,5 +32,6 @@
   (:export
    #:json-empty
    #:json-bool
-   #:json-key-value))
+   #:json-key-value
+   #:value-of))
 
